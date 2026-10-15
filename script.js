@@ -16,12 +16,13 @@ function toast(msg) {
   toastTimer = setTimeout(() => toastEl.classList.remove("show"), 1800);
 }
 
-// Dark mode (remembers choice)
+// Dark mode (saved choice is applied in <head> before paint)
 const root = document.documentElement;
-try { const t = localStorage.getItem("theme"); if (t) root.dataset.theme = t; } catch {}
 $("#theme").addEventListener("click", () => {
+  root.classList.add("theme-anim");
   root.dataset.theme = root.dataset.theme === "dark" ? "light" : "dark";
   try { localStorage.setItem("theme", root.dataset.theme); } catch {}
+  setTimeout(() => root.classList.remove("theme-anim"), 350);
 });
 
 // Count-up numbers when they scroll into view
