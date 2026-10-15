@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucy Hwang — Portfolio</title>
+  <meta name="description" content="Lucy Hwang — Saint James School, Class of 2026. Summa Cum Laude, two-time state champion in web design, and student leader in law, government, and service." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%233347d6'/><text x='50' y='68' font-family='Georgia' font-size='54' fill='white' text-anchor='middle'>L</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=7" />
+</head>
+<body>
+  <!-- Photos: <div class="ph" data-ph="x.jpg"> loads assets/x.jpg. Add the file and it appears. -->
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="brand" href="#top" aria-label="Lucy Hwang, back to top"><span>LH</span>Lucy Hwang</a>
+      <nav class="nav__links" aria-label="Sections">
+        <a href="#about">About</a>
+        <a href="#honors">Honors</a>
+        <a href="#experience">Activities</a>
+        <a href="#internships">Internships</a>
+        <a href="#service">Service</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+        <span class="nav__ink" id="navInk" aria-hidden="true"></span>
+      </nav>
+      <button class="theme" id="theme" aria-label="Toggle dark mode"><span></span></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__text">
+        <p class="eyebrow">Saint James School · Class of 2026</p>
+        <h1>Lucy Hwang</h1>
+        <p class="hero__lead">Summa Cum Laude scholar, two-time state champion in web design, and student leader in law, government, and service.</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#honors">View honors</a>
+          <a class="btn btn--ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero__photo ph" data-ph="avatar.jpg"><img src="assets/avatar.jpg" alt="Portrait of Lucy Hwang" onerror="this.remove()" /></div>
+
+      <dl class="stats" id="stats">
+        <div><dt>Summa Cum Laude</dt><dd>Highest GPA, Class of 2026</dd></div>
+        <div><dt><span data-count="2">2</span>× 1st</dt><dd>AISA State Technology Fair, Level III Web Design</dd></div>
+        <div><dt>AP Scholar</dt><dd>with Honor</dd></div>
+        <div><dt><span data-count="153">153</span>+ hrs</dt><dd>Community service</dd></div>
+      </dl>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section__head">
+        <span class="section__num">01</span>
+        <h2>About</h2>
+      </div>
+      <div class="about">
+        <p class="about__lead">I’m a senior at Saint James School in Montgomery, Alabama, drawn to the places where clear thinking meets public life — courtrooms, legislatures, and the web.</p>
+        <p>I graduate with the highest GPA in the Class of 2026 and an Honors Diploma. I’ve served as a Supreme Court Justice at Alabama Youth Legislature, a judge for Youth Judicial Mock Trial, and a judicial shadowing intern with a local judge. I also won first place in Level III Web Design at the AISA State Technology Fair two years in a row, and I’ve given more than 150 hours of service — from museum education to mentoring a young student.</p>
+        <div class="facts">
+          <div><h3>Skills</h3><p>HTML / CSS · Figma · 3D interior design · Graphic design · Microsoft Office · Korean–English interpretation</p></div>
+          <div><h3>Languages</h3><p>Korean (native) · English (fluent) · Spanish (elementary)</p></div>
+          <div><h3>Interests</h3><p>Law &amp; government · Reading — I run the book review account <a class="inline" href="https://www.instagram.com/archivedbooks_/" target="_blank" rel="noopener">@archivedbooks_</a> · Golf · Travel (40+ U.S. states)</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HONORS -->
+    <section class="section" id="honors">
+      <div class="section__head">
+        <span class="section__num">02</span>
+        <h2>Awards &amp; Honors</h2>
+      </div>
+      <div class="honors">
+        <div class="feature-awards">
+          <article class="fa fa--accent">
+            <span class="fa__grade">Grade 12</span>
+            <h3>Summa Cum Laude</h3>
+            <p>Highest GPA in the Class of 2026</p>
+          </article>
+          <article class="fa">
+            <span class="fa__grade">Grades 10–11</span>
+            <h3>1st Place <em>×2</em></h3>
+            <p>Level III Web Design, AISA State Technology Fair — back-to-back</p>
+          </article>
+          <article class="fa">
+            <span class="fa__grade">Grade 10</span>
+            <h3>Gold Key</h3>
+            <p>Scholastic Writing Awards — advanced to nationals</p>
+          </article>
+        </div>
+        <div class="honor-cols">
+          <div class="hc">
+            <h3 class="col-title">Academic</h3>
+            <ul><li><span>Honors Diploma</span><span class="g">12</span></li><li><span>AP Scholar with Honor</span><span class="g">12</span></li><li><span>Fall Recognition — rigorous AP course load</span><span class="g">12</span></li><li><span>Highest grade in AP Calculus AB</span><span class="g">11</span></li><li><span>Fall Recognition — 5 on AP Precalculus</span><span class="g">11</span></li></ul>
+          </div>
+          <div class="hc">
+            <h3 class="col-title">Competitions</h3>
+            <ul><li><span>2nd Place, Level III Team Award — AISA, two years</span><span class="g">10–11</span></li><li><span>3 Silver Keys, 3 Honorable Mentions — Scholastic Writing</span><span class="g">10</span></li><li><span>3 Silver Keys, 2 Honorable Mentions — Scholastic Writing</span><span class="g">11</span></li></ul>
+          </div>
+          <div class="hc">
+            <h3 class="col-title">Honor Societies</h3>
+            <ul><li><span>National English Honor Society — Secretary</span><span class="g">12</span></li><li><span>National Honor Society</span><span class="g">10</span></li><li><span>Mu Alpha Theta</span><span class="g">10</span></li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACTIVITIES -->
+    <section class="section" id="experience">
+      <div class="section__head">
+        <span class="section__num">03</span>
+        <h2>Activities &amp; Leadership</h2>
+      </div>
+
+      <div class="filters" aria-label="Filter activities">
+        <button class="filter is-active" data-filter="all" aria-pressed="true">All <em></em></button>
+        <button class="filter" data-filter="law" aria-pressed="false">Law &amp; Government <em></em></button>
+        <button class="filter" data-filter="leadership" aria-pressed="false">Leadership <em></em></button>
+        <button class="filter" data-filter="tutoring" aria-pressed="false">Tutoring <em></em></button>
+        <button class="filter" data-filter="stem" aria-pressed="false">STEM <em></em></button>
+        <button class="filter" data-filter="arts" aria-pressed="false">Music <em></em></button>
+      </div>
+
+      <ol class="timeline" id="timeline">
+        <li data-cat="law">
+          <button class="item" aria-expanded="false"><time>Grade 12</time><span><b>Judge</b><small>2025–26 Alabama Youth Judicial Mock Trial</small></span><i aria-hidden="true"></i></button>
+          <ul class="detail"><li>Selected as a judge for the regional and state competitions.</li></ul>
+        </li>
+        <li data-cat="leadership">
+          <button class="item" aria-expanded="false"><time>Grade 12</time><span><b>Student Ambassador</b><small>Saint James School</small></span><i aria-hidden="true"></i></button>
+          <ul class="detail"><li>Selected to represent the school.</li></ul>
+        </li>
+        <li data-cat="leadership">
+          <button class="item" aria-expanded="false"><time>Grade 12</time><span><b>Peer Leader</b><small>Saint James School</small></span><i aria-hidden="true"></i></button>
+          <ul class="detail"><li>Selected for the 2025–26 school year to support and guide freshmen.</li></ul>
+        </li>
+        <li data-cat="law">
+          <button class="item" aria-expanded="false"><time>Grade 12</time><span><b>Delegate, UNICEF</b><small>Vanderbilt Model United Nations (VUMUN)</small></span><i aria-hidden="true"></i></button>
+          <ul class="detail"><li>Represented a delegation on the UNICEF committee.</li></ul>
+        </li>
+        <li data-cat="leadership">
+          <button class="item" aria-expanded="false"><time>Grades 9–12</time><span><b>Treasurer</b><small>Key Club</small></span><i aria-hidden="true"></i></button>
+          <ul class="detail"><li>Selected as club treasurer for four school years.</li><li>Led and organized community service events, including annual blood drives.</li></ul>
+        </li>
+        <li data-cat="leadership">
+          <button class="item" aria-expanded="false"><time>Grades 9–12</time><span><b>Member</b><small>Student Government Association</small></span><i aria-hidden="true"></i></button>
+          <ul class="detail"><li>Welcomed new students by organizing orientations and campus tours.</li><li>Planned and hosted school-wide fundraisers and events.</li></ul>
+        </li>
+        <li data-cat="tutoring">
+          <button class="item" aria-expanded="false"><time>Grades 11–12</time><span><b>SAT Tutor</b><small>Schoolhouse.world</small></span><i aria-hidden="true"></i></button>
+          <ul class="detail"><li>Invited to tutor in the SAT Bootcamp program for scoring above the 90th percentile on an SAT section.</li></ul>
+        </li>
+        <li data-cat="tutoring">
+          <button class="item" aria-expanded="false"><time>Grades 11–12</time><span><b>Writing Center Peer Tutor</b><small>Saint James School</small></span><i aria-hidden="true"></i></button>
+          <ul class="detail"><li>Helped students develop essays and writing assignments.</li></ul>
+        </li>
+        <li data-cat="tutoring">
+          <button class="item" aria-expanded="false"><time>Grades 11–12</time><span><b>Math Tutor</b><small>School tutoring program</small></span><i aria-hidden="true"></i></button>
+          <ul class="detail"><li>Helped peers build math comprehension and problem-solving skills.</li></ul>
+        </li>
+        <li data-cat="law">
+          <button class="item" aria-expanded="false"><time>Grade 11</time><span><b>Supreme Court Justice</b><small>75th Alabama Youth Legislature</small></span><i aria-hidden="true"></i></button>
+          <ul class="detail"><li>Elected at the district level to serve as a Supreme Court Justice.</li><li>Reviewed legislation for constitutionality and engaged in formal debate.</li><li>Completed officer training in judicial responsibilities and court procedure.</li></ul>
+        </li>
+        <li data-cat="law">
+          <button class="item" aria-expanded="false"><time>Grade 11</time><span><b>Co-author, Plastic Bag Ordinance</b><small>65th Youth in City · Montgomery City Hall</small></span><i aria-hidden="true"></i></button>
+          <ul class="detail"><li>Co-authored and passed a proposed ordinance banning plastic bags.</li></ul>
+        </li>
+        <li data-cat="law">
+          <button class="item" aria-expanded="false"><time>Grade 11</time><span><b>Witness</b><small>2024–25 Alabama Youth Judicial Mock Trial · Team Tatum</small></span><i aria-hidden="true"></i></button>
+          <ul class="detail"><li>Competed as a witness at the regional and state levels.</li></ul>
+        </li>
+        <li data-cat="law">
+          <button class="item" aria-expanded="false"><time>Grade 11</time><span><b>Delegate, United Kingdom</b><small>Model United Nations · UN Security Council</small></span><i aria-hidden="true"></i></button>
+          <ul class="detail"><li>Represented the United Kingdom on the Security Council.</li></ul>
+        </li>
+        <li data-cat="law">
+          <button class="item" aria-expanded="false"><time>Grade 11</time><span><b>Member</b><small>Government Club</small></span><i aria-hidden="true"></i></button>
+          <ul class="detail"><li>Prepared for and discussed Alabama Youth in Government programs.</li></ul>
+        </li>
+        <li data-cat="stem">
+          <button class="item" aria-expanded="false"><time>Grade 11</time><span><b>Robotics Team</b><small>Regional competition</small></span><i aria-hidden="true"></i></button>
+          <ul class="detail"><li>Built and programmed a robot with the team for regional competitions.</li><li>Ranked 12th of 39 teams and placed 6th overall at regionals.</li></ul>
+        </li>
+        <li data-cat="stem">
+          <button class="item" aria-expanded="false"><time>Grade 11</time><span><b>Member, Team 2</b><small>Robotics Club</small></span><i aria-hidden="true"></i></button>
+          <ul class="detail"><li>Collaborated with teammates to build a competition robot.</li></ul>
+        </li>
+        <li data-cat="law">
+          <button class="item" aria-expanded="false"><time>Grade 10</time><span><b>Representative, House Chamber</b><small>74th Alabama Youth Legislature</small></span><i aria-hidden="true"></i></button>
+          <ul class="detail"><li>Reviewed proposed bills and engaged in formal debate.</li></ul>
+        </li>
+        <li data-cat="law">
+          <button class="item" aria-expanded="false"><time>Grade 10</time><span><b>Co-author, Distracted Driving Ordinance</b><small>64th Youth in City · Montgomery City Hall</small></span><i aria-hidden="true"></i></button>
+          <ul class="detail"><li>Co-authored an ordinance on phone use while driving.</li></ul>
+        </li>
+        <li data-cat="law">
+          <button class="item" aria-expanded="false"><time>Grade 10</time><span><b>Delegate, Japan</b><small>Model United Nations · International Olympic Committee</small></span><i aria-hidden="true"></i></button>
+          <ul class="detail"><li>Debated global policy, wrote position papers, and collaborated on resolutions.</li></ul>
+        </li>
+        <li data-cat="stem">
+          <button class="item" aria-expanded="false"><time>Grades 9–10</time><span><b>Member</b><small>Math Club</small></span><i aria-hidden="true"></i></button>
+          <ul class="detail"><li>Competed in team problem-solving and math events promoting STEM.</li></ul>
+        </li>
+        <li data-cat="arts">
+          <button class="item" aria-expanded="false"><time>Grades 9–10</time><span><b>Cabaret Crew</b><small>High school choir</small></span><i aria-hidden="true"></i></button>
+          <ul class="detail"><li>Served at the choir’s annual dinner night.</li></ul>
+        </li>
+        <li data-cat="arts">
+          <button class="item" aria-expanded="false"><time>Grade 9</time><span><b>Soprano</b><small>High school choir</small></span><i aria-hidden="true"></i></button>
+          <ul class="detail"><li>Performed for Alabama Governor Kay Ivey on Holocaust Remembrance Day.</li></ul>
+        </li>
+        <li data-cat="arts">
+          <button class="item" aria-expanded="false"><time>Grade 9</time><span><b>Soprano</b><small>A cappella group</small></span><i aria-hidden="true"></i></button>
+          <ul class="detail"><li>Performed in the spring choir concert.</li></ul>
+        </li>
+      </ol>
+      <button class="more" id="moreBtn" hidden>Show all</button>
+    </section>
+
+    <!-- INTERNSHIPS & WORK -->
+    <section class="section" id="internships">
+      <div class="section__head">
+        <span class="section__num">04</span>
+        <h2>Internships &amp; Work</h2>
+      </div>
+      <div class="jobs">
+        <article class="job">
+          <span class="tag">Grades 11–12 · Summer internship</span>
+          <h3>Judicial Shadowing Intern</h3>
+          <small>Local court · Unpaid</small>
+          <p>Shadowed a local judge to observe courtroom proceedings, judicial decision-making, case management, and the daily responsibilities of the bench.</p>
+        </article>
+        <article class="job">
+          <span class="tag">Grades 9–12 · Summer internship</span>
+          <h3>Youth Cultural Heritage Interpreter</h3>
+          <small>Seoul, South Korea · 30 hours</small>
+          <p>Guided international visitors through royal palaces and heritage sites in Korean and English, explaining history, architecture, and cultural traditions.</p>
+        </article>
+        <article class="job">
+          <span class="tag">Grades 9–12 · Job</span>
+          <h3>Short-Term Rental Operations &amp; Design Assistant</h3>
+          <small>Family business</small>
+          <p>Co-managed multiple rental properties: coordinated repairs and contractors, created 3D interior designs, sourced furniture, supported renovations, and interpreted for international guests.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SERVICE -->
+    <section class="section" id="service">
+      <div class="section__head">
+        <span class="section__num">05</span>
+        <h2>Community Service</h2>
+        <span class="section__meta"><b id="hoursTotal" data-count="153">153</b> hours</span>
+      </div>
+      <ul class="service" id="serviceList">
+        <li data-hours="70"><div class="service__row"><b>Montgomery Museum of Fine Arts</b><span>Grades 9–12 · 70 hrs</span></div><div class="bar"><i></i></div><p>Planned workshops and events for the FLIMP and Fall Festivals, designed learning materials for young visitors, and helped curate an exhibition — choosing its theme, name, and artworks.</p></li>
+        <li data-hours="30"><div class="service__row"><b>Youth Cultural Heritage Interpreter</b><span>Grades 9–12 · 30 hrs</span></div><div class="bar"><i></i></div><p>Korean–English interpretation for international visitors at heritage sites in Seoul.</p></li>
+        <li data-hours="20"><div class="service__row"><b>Family Sunshine Center</b><span>Grades 11–12 · 20 hrs</span></div><div class="bar"><i></i></div><p>Mentored a young girl from an abusive household and helped her catch up academically.</p></li>
+        <li data-hours="15"><div class="service__row"><b>Dream Court</b><span>Grade 12 · 15 hrs</span></div><div class="bar"><i></i></div><p>Unified partner in a doubles tennis tournament for athletes with disabilities.</p></li>
+        <li data-hours="10"><div class="service__row"><b>Heart of Alabama Food Bank</b><span>Grade 12 · 10 hrs</span></div><div class="bar"><i></i></div><p>Packed food boxes for seniors during the government shutdown.</p></li>
+        <li data-hours="4"><div class="service__row"><b>Lanark Wildlife Center</b><span>Grade 11 · 4 hrs</span></div><div class="bar"><i></i></div><p>Cleaned enclosures and helped care for an eagle and a turtle.</p></li>
+        <li data-hours="4"><div class="service__row"><b>Saint James School</b><span>Grade 10 · 4 hrs</span></div><div class="bar"><i></i></div><p>Campus beautification and cleanup.</p></li>
+      </ul>
+    </section>
+
+    <!-- WORK -->
+    <section class="section" id="work">
+      <div class="section__head">
+        <span class="section__num">06</span>
+        <h2>Selected Work</h2>
+      </div>
+      <div class="work">
+        <article class="proj">
+          <a class="proj__img ph" data-ph="project-web-1.jpg" href="https://lucyys07.github.io/webdesign/" target="_blank" rel="noopener" aria-label="Open AL College Guide"><img src="assets/project-web-1.jpg" alt="AL College Guide homepage: Find Your Future Today" onerror="this.remove()" /></a>
+          <div class="proj__body">
+            <span class="tag">Web design · 1st place, Grade 10</span>
+            <h3>AL College Guide</h3>
+            <p>A guide that helps students and parents compare six Alabama colleges side by side — tuition, popular majors, average test scores, and campus culture.</p>
+            <details class="how">
+              <summary>How I built it</summary>
+              <p>I researched what families weigh when choosing a college, designed the layout in Figma, then built it in HTML and CSS with a college comparison feature and a simple system for keeping the data current.</p>
+            </details>
+            <ul class="tools"><li>Figma</li><li>HTML</li><li>CSS</li><li>VS Code</li></ul>
+            <a class="link" href="https://lucyys07.github.io/webdesign/" target="_blank" rel="noopener">Visit site <span>↗</span></a>
+          </div>
+        </article>
+        <article class="proj">
+          <a class="proj__img ph" data-ph="project-web-2.jpg" href="https://lucyys07.github.io/webdesign-2/" target="_blank" rel="noopener" aria-label="Open Events in Alabama"><img src="assets/project-web-2.jpg" alt="Events in Alabama homepage: Find Alabama Events Today" onerror="this.remove()" /></a>
+          <div class="proj__body">
+            <span class="tag">Web design · 1st place, Grade 11</span>
+            <h3>Events in Alabama</h3>
+            <p>A curated guide to what’s happening across the state — music festivals, food fairs, community gatherings, and cultural events — built to encourage community engagement.</p>
+            <details class="how">
+              <summary>How I built it</summary>
+              <p>I gathered upcoming events from across Alabama, designed the layout in Figma, then built the site in HTML and CSS with pages for events, the state, and a blog.</p>
+            </details>
+            <ul class="tools"><li>Figma</li><li>HTML</li><li>CSS</li><li>VS Code</li></ul>
+            <a class="link" href="https://lucyys07.github.io/webdesign-2/" target="_blank" rel="noopener">Visit site <span>↗</span></a>
+          </div>
+        </article>
+        <article class="proj">
+          <div class="proj__img ph" data-ph="artwork.jpg"><img src="assets/artwork.jpg" alt="Artwork" onerror="this.remove()" /></div>
+          <div class="proj__body">
+            <span class="tag">Art &amp; design</span>
+            <h3>Artwork</h3>
+            <p>A selection of graphic design, visual art, and 3D interior design work.</p>
+            <a class="link" href="#" data-todo>View gallery <span>→</span></a>
+          </div>
+        </article>
+        <article class="proj">
+          <div class="proj__img ph" data-ph="books.jpg"><img src="assets/books.jpg" alt="@archivedbooks_ profile icon" onerror="this.remove()" /></div>
+          <div class="proj__body">
+            <span class="tag">Writing</span>
+            <h3>@archivedbooks_</h3>
+            <p>An Instagram account where I review and recommend the books I read.</p>
+            <a class="link" href="https://www.instagram.com/archivedbooks_/" target="_blank" rel="noopener">Visit on Instagram <span>→</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="section__head">
+        <span class="section__num">07</span>
+        <h2>Contact</h2>
+      </div>
+      <p class="contact__lead">Thank you for visiting. I’d be glad to share more about my work.</p>
+      <div class="contact__row">
+        <!-- TODO: add assets/resume.pdf -->
+        <button class="btn btn--primary" id="copyEmail" data-email="thisislucyhwang@gmail.com">thisislucyhwang@gmail.com <span class="btn__hint">Copy</span></button>
+        <a class="btn btn--ghost" href="assets/resume.pdf" target="_blank" rel="noopener">Download résumé</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year">2026</span> Lucy Hwang</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js?v=7"></script>
+</body>
+</html>
