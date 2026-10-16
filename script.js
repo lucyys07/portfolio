@@ -138,6 +138,7 @@ function showArt(i) {
   $("#lbText").textContent = item.querySelector(".art-item__text").textContent;
   const facts = item.querySelector(".art-item__facts");
   $("#lbFacts").innerHTML = facts ? facts.innerHTML : "";
+  $(".lightbox figcaption").scrollTop = 0;
 }
 $$(".art-item__btn").forEach((btn) =>
   btn.addEventListener("click", () => {

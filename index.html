@@ -15,7 +15,7 @@
     // Apply a saved dark/light choice before the page paints, so it never flashes the wrong theme.
     try { var t = localStorage.getItem("theme"); document.documentElement.dataset.theme = t === "dark" ? "dark" : "light"; } catch (e) { document.documentElement.dataset.theme = "light"; }
   </script>
-  <link rel="stylesheet" href="styles.css?v=12" />
+  <link rel="stylesheet" href="styles.css?v=14" />
 </head>
 <body>
   <!-- Photos: <div class="ph" data-ph="x.jpg"> loads assets/x.jpg. Add the file and it appears. -->
@@ -314,7 +314,7 @@
           <div class="proj__body">
             <span class="tag">Art &amp; design</span>
             <h3>Artwork</h3>
-            <p>Seven pieces across collage, watercolor, paint, ink, and graphite.</p>
+            <p>Seven pieces across collage, cut paper, watercolor, acrylic, pen, and graphite.</p>
             <a class="link" href="#art">View gallery <span>→</span></a>
           </div>
         </article>
@@ -355,6 +355,10 @@
             <img src="assets/art/a-light-left-behind.jpg" alt="A Light Left Behind, watercolor on paper" loading="lazy" />
           </button>
           <figcaption><span class="art-item__num">02</span><b>A Light Left Behind</b><small>Watercolor on paper · 2026</small></figcaption>
+          <dl class="art-item__facts" hidden>
+            <div><dt>Lesson</dt><dd>Watercolor</dd></div>
+            <div><dt>Materials</dt><dd>Sketchbook, practice watercolor paper, watercolor paint, brushes, water jug, still-life lantern</dd></div>
+          </dl>
           <p class="art-item__text" hidden>In this still-life painting, I explored the interaction of light, texture, and form through two vintage lanterns. I used transparent watercolor layers and variations in value to distinguish the metallic surfaces from the soft folds of the surrounding fabric.</p>
         </figure>
         <figure class="art-item">
@@ -371,30 +375,51 @@
         </figure>
         <figure class="art-item">
           <button class="art-item__btn" data-index="3" aria-label="View Organized Chaos">
-            <img src="assets/art/organized-chaos.jpg" alt="Organized Chaos, ink on paper" loading="lazy" />
+            <img src="assets/art/organized-chaos.jpg" alt="Organized Chaos, cut paper on drawing paper" loading="lazy" />
           </button>
-          <figcaption><span class="art-item__num">04</span><b>Organized Chaos</b><small>Ink on paper · 2026</small></figcaption>
+          <figcaption><span class="art-item__num">04</span><b>Organized Chaos</b><small>Cut paper on drawing paper · 12 × 18 in · 2026</small></figcaption>
+          <dl class="art-item__facts" hidden>
+            <div><dt>Lesson</dt><dd>Golden Ratio and Line</dd></div>
+            <div><dt>Size</dt><dd>12 × 18 in</dd></div>
+            <div><dt>Materials</dt><dd>Design ideas in sketchbook, 12 × 18 in white drawing paper, pencil, ruler, glue, stencils and compass, golden ratio template, colored paper, X-Acto knife</dd></div>
+          </dl>
           <p class="art-item__text" hidden>This abstract design combines geometric and organic patterns to explore rhythm, repetition, and visual balance. I structured the composition around the golden ratio, experimenting with contrasting shapes and negative space to create movement through the arrangement of different patterns within a unified whole.</p>
         </figure>
         <figure class="art-item">
           <button class="art-item__btn" data-index="4" aria-label="View Geometry in Balance">
-            <img src="assets/art/geometry-in-balance.jpg" alt="Geometry in Balance, graphite on paper" loading="lazy" />
+            <img src="assets/art/geometry-in-balance.jpg" alt="Geometry in Balance, graphite on drawing paper" loading="lazy" />
           </button>
-          <figcaption><span class="art-item__num">05</span><b>Geometry in Balance</b><small>Graphite on paper · 2026</small></figcaption>
+          <figcaption><span class="art-item__num">05</span><b>Geometry in Balance</b><small>Graphite on drawing paper · 12 × 18 in · 2026</small></figcaption>
+          <dl class="art-item__facts" hidden>
+            <div><dt>Lesson</dt><dd>Basic Form Rendering</dd></div>
+            <div><dt>Size</dt><dd>12 × 18 in</dd></div>
+            <div><dt>Materials</dt><dd>Sketchbook, HB pencil, ebony pencil, eraser, form still life, 12 × 18 in white drawing paper</dd></div>
+          </dl>
           <p class="art-item__text" hidden>This observational drawing focuses on perspective, proportion, and the interaction of three-dimensional forms. I used gradual shading, tonal contrast, and overlapping shapes to establish depth and distinguish the surfaces of each geometric object.</p>
         </figure>
         <figure class="art-item">
           <button class="art-item__btn" data-index="5" aria-label="View Pieces of a Whole">
-            <img src="assets/art/pieces-of-a-whole.jpg" alt="Pieces of a Whole, mixed-media collage" loading="lazy" />
+            <img src="assets/art/pieces-of-a-whole.jpg" alt="Pieces of a Whole, cut-paper value study" loading="lazy" />
           </button>
-          <figcaption><span class="art-item__num">06</span><b>Pieces of a Whole</b><small>Mixed-media collage · 2026</small></figcaption>
+          <figcaption><span class="art-item__num">06</span><b>Pieces of a Whole</b><small>Cut-paper value study · 12 × 18 in · 2026</small></figcaption>
+          <dl class="art-item__facts" hidden>
+            <div><dt>Lesson</dt><dd>Paper-Cut Value Study</dd></div>
+            <div><dt>Size</dt><dd>12 × 18 in</dd></div>
+            <div><dt>Materials</dt><dd>Fadeless colored paper (12 × 18 in, 3–4 values), rubber cement, art knife, cutting board, pencil, #2 ebony pencil, newspaper, tape, photo reference</dd></div>
+            <div><dt>Process</dt><dd><ol><li>Found a photo reference in a newspaper or magazine.</li><li>Chose a horizontal or vertical format.</li><li>Made a format window in proportion to the Fadeless paper.</li><li>Found and drew the light, medium, and dark value shapes within the object.</li><li>Transferred each shape onto the matching value of Fadeless paper.</li><li>Cut and glued each value into place on the background color.</li></ol></dd></div>
+          </dl>
           <p class="art-item__text" hidden>This collage explores fragmentation and reconstruction through the arrangement of overlapping images and shapes. By breaking apart recognizable features and combining them into a new composition, I experimented with visual perception and the balance between abstraction and representation.</p>
         </figure>
         <figure class="art-item">
           <button class="art-item__btn" data-index="6" aria-label="View Shadows of Stillness">
-            <img src="assets/art/shadows-of-stillness.jpg" alt="Shadows of Stillness, pen and ink on paper" loading="lazy" />
+            <img src="assets/art/shadows-of-stillness.jpg" alt="Shadows of Stillness, permanent pen on illustration paper" loading="lazy" />
           </button>
-          <figcaption><span class="art-item__num">07</span><b>Shadows of Stillness</b><small>Pen and ink on paper · 2026</small></figcaption>
+          <figcaption><span class="art-item__num">07</span><b>Shadows of Stillness</b><small>Permanent pen on illustration paper · 12 × 18 in · 2026</small></figcaption>
+          <dl class="art-item__facts" hidden>
+            <div><dt>Lesson</dt><dd>Hatching, Cross-Hatching &amp; Pointillism</dd></div>
+            <div><dt>Size</dt><dd>12 × 18 in</dd></div>
+            <div><dt>Materials</dt><dd>12 × 18 in illustration paper, 1:1:3 ratio viewfinder, still life, pencil, eraser, black permanent pens</dd></div>
+          </dl>
           <p class="art-item__text" hidden>This still-life drawing focuses on texture, contrast, and the effects of light through detailed linework. I used cross-hatching and variations in line density to build shadows, define individual surfaces, and create three-dimensional depth using only black ink.</p>
         </figure>
       </div>
@@ -436,6 +461,6 @@
   </dialog>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="script.js?v=12"></script>
+  <script src="script.js?v=14"></script>
 </body>
 </html>
