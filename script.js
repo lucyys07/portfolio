@@ -122,6 +122,36 @@ addEventListener("scroll", onScroll, { passive: true });
 addEventListener("resize", onScroll);
 onScroll();
 
+// Art portfolio lightbox
+const lb = $("#lightbox");
+const artItems = $$(".art-item");
+let artIndex = 0;
+function showArt(i) {
+  artIndex = (i + artItems.length) % artItems.length;
+  const item = artItems[artIndex];
+  const img = item.querySelector("img");
+  $("#lbImg").src = img.src;
+  $("#lbImg").alt = img.alt;
+  $("#lbNum").textContent = `${item.querySelector(".art-item__num").textContent} / ${String(artItems.length).padStart(2, "0")}`;
+  $("#lbTitle").textContent = item.querySelector("b").textContent;
+  $("#lbMeta").textContent = item.querySelector("small").textContent;
+  $("#lbText").textContent = item.querySelector(".art-item__text").textContent;
+}
+$$(".art-item__btn").forEach((btn) =>
+  btn.addEventListener("click", () => {
+    showArt(+btn.dataset.index);
+    lb.showModal();
+  })
+);
+$("#lbClose").addEventListener("click", () => lb.close());
+$("#lbPrev").addEventListener("click", () => showArt(artIndex - 1));
+$("#lbNext").addEventListener("click", () => showArt(artIndex + 1));
+lb.addEventListener("click", (e) => { if (e.target === lb) lb.close(); }); // click backdrop
+lb.addEventListener("keydown", (e) => {
+  if (e.key === "ArrowLeft") showArt(artIndex - 1);
+  if (e.key === "ArrowRight") showArt(artIndex + 1);
+});
+
 // Copy email
 $("#copyEmail").addEventListener("click", async (e) => {
   const email = e.currentTarget.dataset.email;
@@ -145,9 +175,9 @@ if (!calm) {
     io.unobserve(el);
     setTimeout(() => { el.classList.remove("reveal", "in"); el.style.transitionDelay = ""; }, 1100); // hand hover transitions back
   }), { threshold: 0.12 });
-  $$(".section__head, .about, .fa, .hc, .filters, .timeline, .job, .service, .proj, .contact__row").forEach((el, i) => {
+  $$(".section__head, .about, .fa, .hc, .filters, .timeline, .job, .service, .proj, .art-item, .contact__row").forEach((el, i) => {
     el.classList.add("reveal");
-    el.style.transitionDelay = el.matches(".fa, .hc, .job, .proj") ? `${(i % 5) * 60}ms` : "";
+    el.style.transitionDelay = el.matches(".fa, .hc, .job, .proj, .art-item") ? `${(i % 5) * 60}ms` : "";
     io.observe(el);
   });
 }
