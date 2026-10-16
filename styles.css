@@ -212,6 +212,7 @@ h1, h2, h3 { color: var(--ink); }
 .more[hidden] { display: none; }
 .item { width: 100%; display: grid; grid-template-columns: 150px 1fr 24px; gap: 24px; align-items: center; padding: 20px 4px; text-align: left; }
 .item time { font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.item b .case { font-style: italic; font-weight: 600; }
 .item b { display: block; font-weight: 600; color: var(--ink); transition: color .2s; }
 .item small { font-size: 14px; color: var(--muted); }
 .item:hover b { color: var(--accent); }

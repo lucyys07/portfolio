@@ -15,7 +15,7 @@
     // Apply a saved dark/light choice before the page paints, so it never flashes the wrong theme.
     try { var t = localStorage.getItem("theme"); document.documentElement.dataset.theme = t === "dark" ? "dark" : "light"; } catch (e) { document.documentElement.dataset.theme = "light"; }
   </script>
-  <link rel="stylesheet" href="styles.css?v=8" />
+  <link rel="stylesheet" href="styles.css?v=9" />
 </head>
 <body>
   <!-- Photos: <div class="ph" data-ph="x.jpg"> loads assets/x.jpg. Add the file and it appears. -->
@@ -184,8 +184,8 @@
           <ul class="detail"><li>Co-authored and passed a proposed ordinance banning plastic bags.</li></ul>
         </li>
         <li data-cat="law">
-          <button class="item" aria-expanded="false"><time>Grade 11</time><span><b>Witness</b><small>2024–25 Alabama Youth Judicial Mock Trial · Team Tatum</small></span><i aria-hidden="true"></i></button>
-          <ul class="detail"><li>Competed as a witness at the regional and state levels.</li></ul>
+          <button class="item" aria-expanded="false"><time>Grade 11</time><span><b>Witness, <i class="case">Carey Pontiac vs. The State of Alabama</i></b><small>2024–25 Alabama Youth Judicial Mock Trial · Team Tatum</small></span><i aria-hidden="true"></i></button>
+          <ul class="detail"><li>Served as a witness in <i>Carey Pontiac vs. The State of Alabama</i> at the regional and state levels.</li></ul>
         </li>
         <li data-cat="law">
           <button class="item" aria-expanded="false"><time>Grade 11</time><span><b>Delegate, United Kingdom</b><small>Model United Nations · UN Security Council</small></span><i aria-hidden="true"></i></button>
