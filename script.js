@@ -136,6 +136,8 @@ function showArt(i) {
   $("#lbTitle").textContent = item.querySelector("b").textContent;
   $("#lbMeta").textContent = item.querySelector("small").textContent;
   $("#lbText").textContent = item.querySelector(".art-item__text").textContent;
+  const facts = item.querySelector(".art-item__facts");
+  $("#lbFacts").innerHTML = facts ? facts.innerHTML : "";
 }
 $$(".art-item__btn").forEach((btn) =>
   btn.addEventListener("click", () => {

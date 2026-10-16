@@ -15,7 +15,7 @@
     // Apply a saved dark/light choice before the page paints, so it never flashes the wrong theme.
     try { var t = localStorage.getItem("theme"); document.documentElement.dataset.theme = t === "dark" ? "dark" : "light"; } catch (e) { document.documentElement.dataset.theme = "light"; }
   </script>
-  <link rel="stylesheet" href="styles.css?v=11" />
+  <link rel="stylesheet" href="styles.css?v=12" />
 </head>
 <body>
   <!-- Photos: <div class="ph" data-ph="x.jpg"> loads assets/x.jpg. Add the file and it appears. -->
@@ -342,7 +342,12 @@
           <button class="art-item__btn" data-index="0" aria-label="View Fragments of Identity">
             <img src="assets/art/fragments-of-identity.jpg" alt="Fragments of Identity, cut-paper collage" loading="lazy" />
           </button>
-          <figcaption><span class="art-item__num">01</span><b>Fragments of Identity</b><small>Cut-paper collage · 2026</small></figcaption>
+          <figcaption><span class="art-item__num">01</span><b>Fragments of Identity</b><small>Colored pencil and cut-paper collage · 11 × 17 in · 2026</small></figcaption>
+          <dl class="art-item__facts" hidden>
+            <div><dt>Lesson</dt><dd>Abstract Construction</dd></div>
+            <div><dt>Size</dt><dd>11 × 17 in</dd></div>
+            <div><dt>Materials</dt><dd>6 × 8 in reference image, 9 × 12 in drawing paper, 11 × 17 in final paper, pencil, eraser, ruler, colored pencils, scissors, glue stick</dd></div>
+          </dl>
           <p class="art-item__text" hidden>This composition explores the relationship between abstraction and portraiture through layered shapes and contrasting colors. I focused on simplifying facial features while maintaining their recognizable form, using overlapping paper and negative space to create depth and visual balance.</p>
         </figure>
         <figure class="art-item">
@@ -419,12 +424,13 @@
         <h3 id="lbTitle"></h3>
         <small id="lbMeta"></small>
         <p id="lbText"></p>
+        <dl class="lightbox__facts" id="lbFacts"></dl>
       </figcaption>
     </figure>
     <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Next artwork">›</button>
   </dialog>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="script.js?v=11"></script>
+  <script src="script.js?v=12"></script>
 </body>
 </html>
