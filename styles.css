@@ -162,6 +162,7 @@ h1, h2, h3 { color: var(--ink); }
 .hc ul { list-style: none; margin: 12px 0 0; padding: 0; }
 .hc li { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 11px 0; border-top: 1px solid var(--line); font-size: 14.5px; line-height: 1.45; color: var(--ink); }
 .hc li:first-child { border-top: 0; }
+.hc li small { display: block; margin-top: 4px; font-size: 13px; line-height: 1.5; color: var(--muted); }
 .g { flex: none; min-width: 42px; padding: 2px 8px; border-radius: 99px; background: var(--accent-soft); color: var(--accent); font-size: 12px; font-weight: 600; text-align: center; font-variant-numeric: tabular-nums; white-space: nowrap; }
 
 /* Internships */

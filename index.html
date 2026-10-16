@@ -15,7 +15,7 @@
     // Apply a saved dark/light choice before the page paints, so it never flashes the wrong theme.
     try { var t = localStorage.getItem("theme"); document.documentElement.dataset.theme = t === "dark" ? "dark" : "light"; } catch (e) { document.documentElement.dataset.theme = "light"; }
   </script>
-  <link rel="stylesheet" href="styles.css?v=9" />
+  <link rel="stylesheet" href="styles.css?v=10" />
 </head>
 <body>
   <!-- Photos: <div class="ph" data-ph="x.jpg"> loads assets/x.jpg. Add the file and it appears. -->
@@ -104,7 +104,7 @@
         <div class="honor-cols">
           <div class="hc">
             <h3 class="col-title">Academic</h3>
-            <ul><li><span>Honors Diploma</span><span class="g">12</span></li><li><span>AP Scholar with Honor</span><span class="g">12</span></li><li><span>Fall Recognition — rigorous AP course load</span><span class="g">12</span></li><li><span>Highest grade in AP Calculus AB</span><span class="g">11</span></li><li><span>Fall Recognition — 5 on AP Precalculus</span><span class="g">11</span></li></ul>
+            <ul><li><span>Honors Diploma<small>Minimum 3.8 GPA, three consecutive years of world language, six semesters of AP courses in at least two subject areas, and eight approved volunteer hours each year from grades 9–12</small></span><span class="g">12</span></li><li><span>AP Scholar with Honor</span><span class="g">12</span></li><li><span>Fall Recognition — rigorous AP course load</span><span class="g">12</span></li><li><span>Highest grade in AP Calculus AB</span><span class="g">11</span></li></ul>
           </div>
           <div class="hc">
             <h3 class="col-title">Competitions</h3>
@@ -112,7 +112,7 @@
           </div>
           <div class="hc">
             <h3 class="col-title">Honor Societies</h3>
-            <ul><li><span>National English Honor Society — Secretary</span><span class="g">12</span></li><li><span>National Honor Society</span><span class="g">10</span></li><li><span>Mu Alpha Theta</span><span class="g">10</span></li></ul>
+            <ul><li><span>National English Honor Society — Secretary</span><span class="g">12</span></li><li><span>National Honor Society</span><span class="g">10</span></li><li><span>Mu Alpha Theta</span><span class="g">10</span></li><li><span>National Technical Honor Society</span></li><li><span>National Spanish Honor Society</span></li></ul>
           </div>
         </div>
       </div>
@@ -337,9 +337,8 @@
       </div>
       <p class="contact__lead">Thank you for visiting. I’d be glad to share more about my work.</p>
       <div class="contact__row">
-        <!-- TODO: add assets/resume.pdf -->
         <button class="btn btn--primary" id="copyEmail" data-email="thisislucyhwang@gmail.com">thisislucyhwang@gmail.com <span class="btn__hint">Copy</span></button>
-        <a class="btn btn--ghost" href="assets/resume.pdf" target="_blank" rel="noopener">Download résumé</a>
+        <a class="btn btn--ghost" href="https://drive.google.com/file/d/1opqRie4WuAqhod6Bj0oGBhpR-cLGMyE9/view?usp=sharing" target="_blank" rel="noopener">View résumé ↗</a>
       </div>
     </section>
   </main>
