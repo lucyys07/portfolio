@@ -140,9 +140,9 @@ function showArt(i) {
   $("#lbFacts").innerHTML = facts ? facts.innerHTML : "";
   $(".lightbox figcaption").scrollTop = 0;
 }
-$$(".art-item__btn").forEach((btn) =>
+$$(".art-item__btn, [data-open]").forEach((btn) =>
   btn.addEventListener("click", () => {
-    showArt(+btn.dataset.index);
+    showArt(+(btn.dataset.index ?? btn.dataset.open));
     lb.showModal();
   })
 );
@@ -178,9 +178,9 @@ if (!calm) {
     io.unobserve(el);
     setTimeout(() => { el.classList.remove("reveal", "in"); el.style.transitionDelay = ""; }, 1100); // hand hover transitions back
   }), { threshold: 0.12 });
-  $$(".section__head, .about, .fa, .hc, .filters, .timeline, .job, .service, .proj, .art-item, .contact__row").forEach((el, i) => {
+  $$(".section__head, .about, .fa, .hc, .filters, .timeline, .job, .service, .proj, .contact__row").forEach((el, i) => {
     el.classList.add("reveal");
-    el.style.transitionDelay = el.matches(".fa, .hc, .job, .proj, .art-item") ? `${(i % 5) * 60}ms` : "";
+    el.style.transitionDelay = el.matches(".fa, .hc, .job, .proj") ? `${(i % 5) * 60}ms` : "";
     io.observe(el);
   });
 }
